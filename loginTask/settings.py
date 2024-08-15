@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL = 'account.CustomUser'
+
+
 
 # Application definition
 
@@ -74,10 +77,10 @@ WSGI_APPLICATION = "loginTask.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "logindb",
-        "USER": "sample_user",
-        "PASSWORD": "password",
-        "HOST": "localhost",
+        "NAME": "postgres",
+        "USER": "postgres.ljjasfhixsdnifqqjspj",
+        "PASSWORD": "Sxbm5dhzYd906bj4",
+        "HOST": "aws-0-us-west-1.pooler.supabase.com",
         "PORT": "5432",
     }
 }
